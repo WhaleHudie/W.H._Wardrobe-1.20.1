@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "wh-wardrobe",
+	"version": "${version}",
+	"name": "W.H. Wardrobe",
+	"description": "This is just a personal wardrobe mod by whalehudie",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/wh-wardrobe/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.whalehudie.whwardrobe.WHWardrobe"
+		],
+		"client": [
+			"net.whalehudie.whwardrobe.WHWardrobeClient"
+		],
+		"fabric-datagen": [
+			"net.whalehudie.whwardrobe.WHWardrobeDataGenerator"
+		]
+	},
+	"mixins": [
+		"wh-wardrobe.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
